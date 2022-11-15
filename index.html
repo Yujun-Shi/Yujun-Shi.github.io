@@ -34,8 +34,7 @@
               </p>
               <p>
                 I work on Machine Learning/Computer Vision in general.
-                Currently, I'm especially interested in using information-theoretic tools to
-                characterize and study Continual/Incremental Learning.
+                Currently, I'm especially interested in Federated/Continual Learning.
                 I am open to discussion or collaboration. Feel free to drop me an email if you're interested.
               </p>
               <p style="text-align:center">
@@ -48,16 +47,18 @@
             </td>
             <td style="padding:2.5%;width:30%;max-width:30%">
               <a href="images/img.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/img.jpg" class="hoverZoomLink"></a>
+              <!--
               <p>
                 Photo credit to <a href="http://jeff95.me/">Jianfeng Zhang</a>.
               </p>
+              -->
             </td>
           </tr>
         </tbody></table>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tbody><tr>
             <td width="100%" valign="middle">
-              <heading>Continual/Incremental Learning Papers</heading>
+              <heading>Publications</heading>
             </td>
           </tr>
           </tbody>
@@ -90,39 +91,40 @@
             </p>
           </td>
         </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <papertitle>Continual Learning via Bit-Level Information Preserving</papertitle>
-            <br>
-            <strong>Yujun Shi</strong>,
-            Li Yuan,
-            Yunpeng Chen,
-            Jiashi Feng
-            <br>
-            <em>CVPR</em>, 2021
-            <br>
-            [<a href="https://arxiv.org/abs/2105.04444">arXiv link</a>]
-            [<a href="https://github.com/Yujun-Shi/BLIP">code</a>]
-            [<a href="data/blip.bib">bibtex</a>]
-            [<a href="https://www.youtube.com/watch?v=VJTiJIWP6P0&t=641s">talk @ ContinualAI</a>]
-            <p></p>
-            <p>
-              By viewing learning algorithm as a channel (input data and output model parameters)
-              and using chain rule of mutual information,
-              we propose a novel algorithm called Bit-Level Information Preserving (BLIP) to combat forgetting.
-            </p>
-          </td>
-        </table>
-
+        <!--
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tbody><tr>
             <td width="100%" valign="middle">
-              <heading>Other Papers</heading>
+              <heading>Co-author Papers</heading>
             </td>
           </tr>
           </tbody>
         </tbody></table>
+        -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <papertitle>All Tokens Matter: Token Labeling for Training Better Vision Transformers</papertitle>
+            <br>
+            Zihang Jiang,
+            Qibin Hou,
+            Li Yuan,
+            Daquan Zhou,
+            <strong>Yujun Shi</strong>,
+            Xiaojie Jin,
+            Anran Wang,
+            Jiashi Feng
+            <br>
+            <em>NeurIPS</em>, 2021
+            <br>
+            [<a href="https://arxiv.org/abs/2104.10858">arXiv link</a>]
+            [<a href="https://github.com/zihangJiang/TokenLabeling">code</a>]
+            <p>
+              Instead of only supervising the classification token in ViT,
+              we propose a novel offline knowledge distillation method that supervises all output tokens
+              and significantly boost ViT performance.
+            </p>
+          </td>
+        </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <td style="padding:20px;width:100%;vertical-align:middle">
             <papertitle>Tokens-to-Token ViT: Training Vision Transformers from Scratch on ImageNet</papertitle>
@@ -149,25 +151,24 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <td style="padding:20px;width:100%;vertical-align:middle">
-            <papertitle>All Tokens Matter: Token Labeling for Training Better Vision Transformers</papertitle>
+            <papertitle>Continual Learning via Bit-Level Information Preserving</papertitle>
             <br>
-            Zihang Jiang,
-            Qibin Hou,
-            Li Yuan,
-            Daquan Zhou,
             <strong>Yujun Shi</strong>,
-            Xiaojie Jin,
-            Anran Wang,
+            Li Yuan,
+            Yunpeng Chen,
             Jiashi Feng
             <br>
-            <em>NeurIPS</em>, 2021
+            <em>CVPR</em>, 2021
             <br>
-            [<a href="https://arxiv.org/abs/2104.10858">arXiv link</a>]
-            [<a href="https://github.com/zihangJiang/TokenLabeling">code</a>]
+            [<a href="https://arxiv.org/abs/2105.04444">arXiv link</a>]
+            [<a href="https://github.com/Yujun-Shi/BLIP">code</a>]
+            [<a href="data/blip.bib">bibtex</a>]
+            [<a href="https://www.youtube.com/watch?v=VJTiJIWP6P0&t=641s">talk @ ContinualAI</a>]
+            <p></p>
             <p>
-              Instead of only supervising the classification token in ViT,
-              we propose a novel offline knowledge distillation method that supervises all output tokens
-              and significantly boost ViT performance.
+              By viewing learning algorithm as a channel (input data and output model parameters)
+              and using chain rule of mutual information,
+              we propose a novel algorithm called Bit-Level Information Preserving (BLIP) to combat forgetting.
             </p>
           </td>
         </table>
@@ -249,6 +250,17 @@
             EE5137 Stochastic Process
             <br>
             IE6520 Theory and Algorithms for Online Learning
+            <br>
+          </td>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>Tutoring & TA</heading>
+            <br>
+            EE2211 Introduction to Machine Learning (Fall 2022)
+            <br>
+            EE2012A Analytical Methods in Electrical and Computer Engineering (Spring 2022)
             <br>
           </td>
         </table>
