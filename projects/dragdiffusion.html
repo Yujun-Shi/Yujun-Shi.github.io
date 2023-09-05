@@ -36,10 +36,12 @@
 
 <body>
 <div class="container">
-    <div class="title">
+    <div class="title" display="block">
+        <b>
         DragDiffusion: Harnessing Diffusion Models
         <br>
         for Interactive Point-based Image Editing
+        </b>
     </div>
 
     <!-- <div class="venue">
@@ -68,9 +70,12 @@
 
     <br><br>
 
-    <div class="affiliation"><sup>1&nbsp;</sup>National University of Singapore</div>
-    <div class="affiliation"><sup>2&nbsp;</sup>ByteDance Inc.</div>
-
+    <div class="affiliation">
+        <sup>1&nbsp;</sup>National University of Singapore&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2&nbsp;</sup>ByteDance
+    </div>
+    <!--
+    <div class="affiliation"></div>
+    -->
     <br><br>
 
     <div class="links"><a href="https://arxiv.org/abs/2306.14435">[Paper]</a></div>
@@ -78,24 +83,6 @@
     <div class="links"><a href="https://www.bilibili.com/video/BV1wX4y1p7Ns/?vd_source=fa65719b2d4e7994ab64a631336a3a99#reply360690777">[Video]</a></div>
 
     <br><br>
-
-    <div class="video-with-text">
-        <video width="1000" height="563" controls>
-            <source src="./drag_diffusion_resources/clip_merge.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <br><br><br>
-    <p style="width: 80%;text-align: center">
-        Our DragDiffusion enables "drag" editing for diffusion models.
-        Given an input image, the user clicks handle points (<font color="red">red</font>),
-        target points (<font color="blue">blue</font>) and
-        draw a mask specifying editable region
-        (<font color="gray">brighter areas</font>).
-    </p>
-    <br><br>
-    <hr>
-
 
     <h1>Abstract</h1>
     <p style="width: 80%;text-align: justify">
@@ -120,6 +107,145 @@
     <br><br>
     <hr>
 
+    <h1>Dragging Trajectories (Generated Images)</h1>
+    <div class="img-with-text">
+        <figcaption style="font-size:20px">user edit</figcaption>
+        <img width="250" height="250" src="./drag_diffusion_resources/user_edit_CF1.png"/>
+    </div>
+    <div class="video-with-text">
+        <figcaption style="font-size:20px">dragging trajectory</figcaption>
+        <video width="250" height="250" controls>
+            <source src="./drag_diffusion_resources/CF1.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="img-with-text">
+        <figcaption style="font-size:20px">user edit</figcaption>
+        <img width="250" height="250" src="./drag_diffusion_resources/user_edit_MR1.png"/>
+    </div>
+    <div class="video-with-text">
+        <figcaption style="font-size:20px">dragging trajectory</figcaption>
+        <video width="250" height="250" controls>
+            <source src="./drag_diffusion_resources/MR1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <br>
+
+    <div class="img-with-text">
+        <figcaption style="font-size:20px">user edit</figcaption>
+        <img width="250" height="384" src="./drag_diffusion_resources/user_edit_CF2.png"/>
+    </div>
+    <div class="video-with-text">
+        <figcaption style="font-size:20px">dragging trajectory</figcaption>
+        <video width="250" height="384" controls>
+            <source src="./drag_diffusion_resources/CF2.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="img-with-text">
+        <figcaption style="font-size:20px">user edit</figcaption>
+        <img width="250" height="384" src="./drag_diffusion_resources/user_edit_MR2.png"/>
+    </div>
+    <div class="video-with-text">
+        <figcaption style="font-size:20px">dragging trajectory</figcaption>
+        <video width="250" height="384" controls>
+            <source src="./drag_diffusion_resources/MR2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <br>
+
+    <div class="img-with-text">
+        <figcaption style="font-size:20px">user edit</figcaption>
+        <img width="384" height="250" src="./drag_diffusion_resources/user_edit_CF3.png"/>
+    </div>
+    <div class="video-with-text">
+        <figcaption style="font-size:20px">dragging trajectory</figcaption>
+        <video width="384" height="250" controls>
+            <source src="./drag_diffusion_resources/CF3.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <h1>Dragging Trajectories (Real Images)</h1>
+    <div class="img-with-text">
+        <figcaption style="font-size:20px">user edit</figcaption>
+        <img width="200" height="200" src="./drag_diffusion_resources/user_edit_dog.png"/>
+    </div>
+    <div class="img-with-text">
+        <figcaption style="font-size:20px">user edit</figcaption>
+        <img width="200" height="200" src="./drag_diffusion_resources/user_edit_sculpture.png"/>
+    </div>
+    <div class="img-with-text">
+        <figcaption style="font-size:20px">user edit</figcaption>
+        <img width="200" height="200" src="./drag_diffusion_resources/user_edit_oilpaint.png"/>
+    </div>
+    <div class="img-with-text">
+        <figcaption style="font-size:20px">user edit</figcaption>
+        <img width="200" height="200" src="./drag_diffusion_resources/user_edit_oilpaint_mountain.png"/>
+    </div>
+    <div class="img-with-text">
+        <figcaption style="font-size:20px">user edit</figcaption>
+        <img width="200" height="200" src="./drag_diffusion_resources/user_edit_cat_dog.png"/>
+    </div>
+
+    <br><br>
+
+    <div class="video-with-text">
+        <figcaption style="font-size:20px">dragging trajectory</figcaption>
+        <video width="200" height="200" controls>
+            <source src="./drag_diffusion_resources/dog.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-with-text">
+        <figcaption style="font-size:20px">dragging trajectory</figcaption>
+        <video width="200" height="200" controls>
+            <source src="./drag_diffusion_resources/sculpture.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-with-text">
+        <figcaption style="font-size:20px">dragging trajectory</figcaption>
+        <video width="200" height="200" controls>
+            <source src="./drag_diffusion_resources/oilpaint_shorter.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-with-text">
+        <figcaption style="font-size:20px">dragging trajectory</figcaption>
+        <video width="200" height="200" controls>
+            <source src="./drag_diffusion_resources/oilpaint_mountain.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-with-text">
+        <figcaption style="font-size:20px">dragging trajectory</figcaption>
+        <video width="200" height="200" controls>
+            <source src="./drag_diffusion_resources/cat_dog.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <!--
+    <div class="video-with-text">
+        <video width="1000" height="563" controls>
+            <source src="./drag_diffusion_resources/clip_merge.mp4" type="video/mp4">
+        </video>
+    </div>
+    <br><br>
+    <p style="width: 80%;text-align: center">
+        Given an input image, the user clicks handle points (<font color="red">red</font>),
+        target points (<font color="blue">blue</font>) and
+        draw a mask specifying editable region
+        (<font color="gray">brighter areas</font>).
+    </p>
+    <br><br>
+    <hr>
+    -->
+
+    <!--
     <h1>Method Overview</h1>
     <img style="width: 80%;" src="./drag_diffusion_resources/method_v3.jpg"
          alt="Method overview figure"/>
@@ -140,52 +266,9 @@
     <br><br>
 
     <hr>
-    <h1>Editing Trajectories</h1>
-    <div class="img-with-text">
-        <img width="240" height="240" src="./drag_diffusion_resources/user_edit_oilpaint.png"/>
-        <figcaption style="font-size:25px">user edit</figcaption>
-    </div>
-    <div class="img-with-text">
-        <img width="240" height="240" src="./drag_diffusion_resources/user_edit_oilpaint_mountain.png"/>
-        <figcaption style="font-size:25px">user edit</figcaption>
-    </div>
-    <div class="img-with-text">
-        <img width="240" height="240" src="./drag_diffusion_resources/user_edit_cat_dog.png"/>
-        <figcaption style="font-size:25px">user edit</figcaption>
-    </div>
-    <div class="img-with-text">
-        <img width="240" height="240" src="./drag_diffusion_resources/user_edit_sculpture.png"/>
-        <figcaption style="font-size:25px">user edit</figcaption>
-    </div>
+    -->
 
-    <div class="video-with-text">
-        <video width="240" height="240" controls>
-            <source src="./drag_diffusion_resources/oilpaint_shorter.mp4" type="video/mp4">
-        </video>
-    <figcaption style="font-size:25px">editing trajectory</figcaption>
-    </div>
-    <div class="video-with-text">
-        <video width="240" height="240" controls>
-            <source src="./drag_diffusion_resources/oilpaint_mountain.mp4" type="video/mp4">
-        </video>
-    <figcaption style="font-size:25px">editing trajectory</figcaption>
-    </div>
-    <div class="video-with-text">
-        <video width="240" height="240" controls>
-            <source src="./drag_diffusion_resources/cat_dog.mp4" type="video/mp4">
-        </video>
-    <figcaption style="font-size:25px">editing trajectory</figcaption>
-    </div>
-    <div class="video-with-text">
-        <video width="240" height="240" controls>
-            <source src="./drag_diffusion_resources/sculpture.mp4" type="video/mp4">
-        </video>
-    <figcaption style="font-size:25px">editing trajectory</figcaption>
-    </div>
-    <br><br><br>
-    <hr>
-
-    <h1>Results</h1>
+    <h1>More Dragging Results</h1>
     <h2>General objects</h2>
     <img style="width: 80%;" src="./drag_diffusion_resources/general_object.jpg"
          alt="Results figure"/>
@@ -213,7 +296,7 @@
         </a>
     </div>
     <div class="paper-info">
-        <h3>DragDiffusion: Harnessing Diffusion Models for Interactive Point-based Image Editing</h3>
+        <h2>DragDiffusion: Harnessing Diffusion Models for Interactive Point-based Image Editing</h2>
         <p>Yujun Shi, Chuhui Xue, Jiachun Pan, Wenqing Zhang, Vincent Y. F. Tan, Song Bai</p>
         <p>arXiv, 2023.</p>
         <pre><code>
